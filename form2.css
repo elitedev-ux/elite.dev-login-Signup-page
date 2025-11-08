@@ -1,0 +1,116 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: poppins;
+  background-image: url(./assets/7672043.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+.wrapper2 {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: max(40%, 600px);
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  animation: slideIn 0.8s ease-out forwards;
+  /* margin-left: auto;
+    margin-right: 0px; */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.wrapper2 h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.wrapper2 #form2 {
+  width: min(400px, 100%);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.wrapper2 #form2 div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.wrapper2 #form2 label {
+  flex-shrink: 0;
+  height: 50px;
+  width: 50px;
+  background-color: purple;
+  fill: white;
+  color: white;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.wrapper2 #form2 input {
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-width: 0;
+  height: 50px;
+  padding: 1em;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background-color: rgb(249, 248, 255);
+  transition: 150ms ease;
+  border-left: none;
+}
+
+.wrapper2 #form2 input:hover {
+  border: 2px solid purple;
+}
+div:has(input:focus) > label {
+  background-color: black;
+}
+
+#form2 button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 1000px;
+  padding: 0.85em 4em;
+  background-color: purple;
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+#form2 button:hover {
+  background-color: black;
+}
+#form2 button:focus {
+  background-color: black;
+  outline: none;
+}
